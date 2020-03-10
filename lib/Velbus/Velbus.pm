@@ -90,7 +90,7 @@ sub process_message {
                             $global{Vars}{Modules}{Address}{$message{address}}{ModuleInfo}{type} ne '' ) {
                   $message{ModuleType}    = $global{Vars}{Modules}{Address}{$message{address}}{ModuleInfo}{type} ;
                } else {
-                  push @{$message{text}}, "No module type found for this address" ;
+                  push @{$message{text}}, "address $message{address} No module type found for this address" ;
                }
             }
 
